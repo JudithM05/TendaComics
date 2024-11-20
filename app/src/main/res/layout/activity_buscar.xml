@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarActivity">
+
+    <!-- LinearLayout para organizar la lupa y el campo de texto -->
+    <LinearLayout
+        android:id="@+id/linearLayoutBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.4"> <!-- Ajusta el bias si es necesario para centrar mejor -->
+
+        <!-- Lupa -->
+        <ImageView
+            android:id="@+id/imageViewLupa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+        <!-- Camp de text -->
+        <EditText
+            android:id="@+id/editTextBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="BUSCAR" />
+    </LinearLayout>
+
+    <!-- Botó a sota del LinearLayout -->
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSCA"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#ee419e"
+        android:layout_marginTop="16dp" /> <!-- Ajusta el marge si és necessari -->
+    <fragment
+        android:id="@+id/fragmentPerfil"
+        android:name="com.example.tendacomics.Perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="30dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

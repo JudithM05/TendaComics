@@ -6,4 +6,7 @@
     <string name="mangues">Mangues</string>
     <string name="c_mics">Cómics</string>
     <string name="figures">Figures</string>
+    <string name="perfil">Perfil</string>
+    <string name="correu_electr_nic">Correu electrònic</string>
+    <string name="direcci">Direcció</string>
 </resources>

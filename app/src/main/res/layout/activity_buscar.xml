@@ -53,6 +53,6 @@
         android:name="com.example.tendacomics.Perfil"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="30dp" />
+        android:layout_gravity="end|top"
+        android:layout_margin="40dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,28 +28,36 @@
             android:textSize="20sp"
             android:layout_marginBottom="20dp" />
 
-            <Button
-                android:id="@+id/buttonMangues"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#ee419e"
-                android:text="@string/mangues"
-                android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/buttonMangues"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ee419e"
+            android:text="@string/mangues"
+            android:layout_marginTop="10dp" />
 
-            <Button
-                android:id="@+id/buttonComics"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#ee419e"
-                android:text="@string/c_mics"
-                android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/buttonComics"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ee419e"
+            android:text="@string/c_mics"
+            android:layout_marginTop="10dp" />
 
-            <Button
-                android:id="@+id/buttonFigures"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#ee419e"
-                android:text="@string/figures"
-                android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/buttonFigures"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ee419e"
+            android:text="@string/figures"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentmenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom" />
+
+
 </FrameLayout>

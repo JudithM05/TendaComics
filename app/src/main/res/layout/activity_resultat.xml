@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultatActivity">
+
     <fragment
         android:id="@+id/fragmentPerfil"
         android:name="com.example.tendacomics.Perfil"
@@ -18,12 +19,12 @@
         android:id="@+id/linearLayoutBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4">
 
         <!-- Lupa -->
@@ -31,8 +32,8 @@
             android:id="@+id/imageViewLupa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="?android:attr/actionModeWebSearchDrawable"
-            android:contentDescription="Icona lupa" />
+            android:contentDescription="Icona lupa"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
         <!-- Camp de text -->
         <EditText
@@ -45,109 +46,132 @@
     </LinearLayout>
 
     <!-- LinearLayout vertical para centrar las imágenes debajo del texto -->
-    <LinearLayout android:id="@+id/linearLayoutImagenes"
+    <LinearLayout
+        android:id="@+id/linearLayoutImagenes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar">
+
         <ImageButton
             android:id="@+id/imageButtonGwenpool"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/portada_gwenpool_uno"
-            android:scaleType="centerCrop"
             android:layout_marginRight="10dp"
-            android:contentDescription="comic Gwenpool"/>
+            android:contentDescription="comic Gwenpool"
+            android:scaleType="centerCrop"
+            android:src="@drawable/portada_gwenpool_uno" />
+
         <ImageButton
             android:id="@+id/imageButtonSpiderman"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/spiderman_honor_a_slucis"
-            android:scaleType="centerCrop"
             android:layout_marginLeft="10dp"
-            android:contentDescription="comic Spiderman"/>
+            android:contentDescription="comic Spiderman"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spiderman_honor_a_slucis" />
     </LinearLayout>
-    <LinearLayout android:id="@+id/linearLayoutImagenesDos"
+
+    <LinearLayout
+        android:id="@+id/linearLayoutImagenesDos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenes"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenes">
+
         <ImageButton
             android:id="@+id/imageDoctorStrange"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/el_que_hace_fufufu"
-            android:scaleType="centerCrop"
             android:layout_marginRight="10dp"
-            android:contentDescription="Comic Dr Strange"/>
+            android:contentDescription="Comic Dr Strange"
+            android:scaleType="centerCrop"
+            android:src="@drawable/el_que_hace_fufufu" />
+
         <ImageButton
             android:id="@+id/imageButtonBatman"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/el_senor_de_la_nocheee"
-            android:scaleType="centerCrop"
             android:layout_marginLeft="10dp"
-            android:contentDescription="Comic Batman"/>
+            android:contentDescription="Comic Batman"
+            android:scaleType="centerCrop"
+            android:src="@drawable/el_senor_de_la_nocheee" />
     </LinearLayout>
-    <LinearLayout android:id="@+id/linearLayoutImagenesTres"
+
+    <LinearLayout
+        android:id="@+id/linearLayoutImagenesTres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenesDos"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenesDos">
+
         <ImageButton
             android:id="@+id/imageOshiNoKo"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/oshi_no_ko_uno"
-            android:scaleType="centerCrop"
             android:layout_marginRight="10dp"
-            android:contentDescription="Comic Oshi no ko"/>
+            android:contentDescription="Comic Oshi no ko"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oshi_no_ko_uno" />
+
         <ImageButton
             android:id="@+id/imageButtonPersona5"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/portada_personacincomanga"
-            android:scaleType="centerCrop"
             android:layout_marginLeft="10dp"
-            android:contentDescription="Comic Persona 5"/>
+            android:contentDescription="Comic Persona 5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/portada_personacincomanga" />
     </LinearLayout>
-    <LinearLayout android:id="@+id/linearLayoutImagenesCuatro"
+
+    <LinearLayout
+        android:id="@+id/linearLayoutImagenesCuatro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenesTres"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenesTres">
+
         <ImageButton
             android:id="@+id/imageButtonKrymsoul"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/krymsoul"
-            android:scaleType="centerCrop"
             android:layout_marginRight="10dp"
-            android:contentDescription="Comic Krymsoul"/>
+            android:contentDescription="Comic Krymsoul"
+            android:scaleType="centerCrop"
+            android:src="@drawable/krymsoul" />
+
         <ImageButton
             android:id="@+id/imageButtonHeroAcademia"
             android:layout_width="133dp"
             android:layout_height="169dp"
-            android:src="@drawable/heroaca"
-            android:scaleType="centerCrop"
             android:layout_marginLeft="10dp"
-            android:contentDescription="Comic My Hero Academia"/>
+            android:contentDescription="Comic My Hero Academia"
+            android:scaleType="centerCrop"
+            android:src="@drawable/heroaca" />
     </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentmenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

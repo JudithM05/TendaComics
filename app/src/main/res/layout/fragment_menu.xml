@@ -1,20 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#ee419e">
-        </TextView>
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ee419e"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/imageViewCasa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:scaleType="centerInside" />
+        <ImageView
+            android:id="@+id/imageViewLupa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/imageViewCompra"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/shoppingcart"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/imageViewAjuda"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/helpcircle"
+            android:scaleType="centerInside" />
     </LinearLayout>
 
 </FrameLayout>

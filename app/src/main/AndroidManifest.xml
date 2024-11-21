@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TendaComics"
         tools:targetApi="31">
         <activity
+            android:name=".CistellaCompra"
+            android:exported="false" />
+        <activity
             android:name=".Compradetallada"
             android:exported="false" />
         <activity

@@ -7,4 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".CompraDetallada">
 
+    <fragment
+        android:id="@+id/fragmentPerfil"
+        android:name="com.example.tendacomics.Perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:src="@drawable/portada_gwenpool_uno"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La increíble Masacre-Gwen"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="¡La sensación de Internet en su propia serie! Gwen solía ser una lectora de cómics, como tú, hasta que un día despertó en un mundo donde los personajes de las viñetas son reales. ¡Estaba en el Universo Marvel! Y a partir de ahí, cualquier cosa es posible."
+            android:textSize="11dp"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="AFEGIR AL CISTELL"
+            android:textSize="15dp"
+            android:backgroundTint="#ee419e"
+            />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

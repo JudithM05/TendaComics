@@ -24,14 +24,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
-        app:layout_constraintVertical_bias="0.4"> <!-- Ajusta el bias si es necesario para centrar mejor -->
+        app:layout_constraintVertical_bias="0.4">
 
         <!-- Lupa -->
         <ImageView
             android:id="@+id/imageViewLupa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+            android:contentDescription="Icona lupa" />
 
         <!-- Camp de text -->
         <EditText
@@ -59,14 +60,16 @@
             android:layout_height="169dp"
             android:src="@drawable/portada_gwenpool_uno"
             android:scaleType="centerCrop"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:contentDescription="comic Gwenpool"/>
         <ImageButton
             android:id="@+id/imageButtonSpiderman"
             android:layout_width="133dp"
             android:layout_height="169dp"
             android:src="@drawable/spiderman_honor_a_slucis"
             android:scaleType="centerCrop"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:contentDescription="comic Spiderman"/>
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayoutImagenesDos"
         android:layout_width="wrap_content"
@@ -83,14 +86,16 @@
             android:layout_height="169dp"
             android:src="@drawable/el_que_hace_fufufu"
             android:scaleType="centerCrop"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:contentDescription="Comic Dr Strange"/>
         <ImageButton
             android:id="@+id/imageButtonBatman"
             android:layout_width="133dp"
             android:layout_height="169dp"
             android:src="@drawable/el_senor_de_la_nocheee"
             android:scaleType="centerCrop"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Comic Batman"/>
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayoutImagenesTres"
         android:layout_width="wrap_content"
@@ -107,14 +112,42 @@
             android:layout_height="169dp"
             android:src="@drawable/oshi_no_ko_uno"
             android:scaleType="centerCrop"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:contentDescription="Comic Oshi no ko"/>
         <ImageButton
             android:id="@+id/imageButtonPersona5"
             android:layout_width="133dp"
             android:layout_height="169dp"
             android:src="@drawable/portada_personacincomanga"
             android:scaleType="centerCrop"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Comic Persona 5"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayoutImagenesCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutImagenesTres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+        <ImageButton
+            android:id="@+id/imageButtonKrymsoul"
+            android:layout_width="133dp"
+            android:layout_height="169dp"
+            android:src="@drawable/krymsoul"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Comic Krymsoul"/>
+        <ImageButton
+            android:id="@+id/imageButtonHeroAcademia"
+            android:layout_width="133dp"
+            android:layout_height="169dp"
+            android:src="@drawable/heroaca"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Comic My Hero Academia"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

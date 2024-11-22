@@ -55,9 +55,8 @@
 
     <fragment
         android:id="@+id/fragmentmenu"
+        android:name="com.example.tendacomics.Menu"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="bottom" />
-
-
 </FrameLayout>

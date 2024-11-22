@@ -14,7 +14,7 @@ public class Menu extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflamos el layout del fragmento
+// Inflamos el layout del fragmento
         View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
 
         // Obtener las referencias a los ImageView
@@ -51,7 +51,6 @@ public class Menu extends Fragment {
                 startActivity(intent);
             }
         });
-
         return rootView;
     }
 }

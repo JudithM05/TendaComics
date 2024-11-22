@@ -12,12 +12,12 @@
         android:id="@+id/linearLayoutBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"> <!-- Ajusta el bias si es necessari per centrar millor -->
 
         <!-- Lupa -->
@@ -42,12 +42,12 @@
         android:id="@+id/buttonBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUSCA"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#ee419e"
-        android:layout_marginTop="16dp" /> <!-- Ajusta el marge si és necessari -->
+        android:text="BUSCA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar" /> <!-- Ajusta el marge si és necessari -->
     <fragment
         android:id="@+id/fragmentPerfil"
         android:name="com.example.tendacomics.Perfil"
@@ -55,11 +55,13 @@
         android:layout_height="50dp"
         android:layout_gravity="end|top"
         android:layout_margin="40dp" />
+
     <fragment
         android:id="@+id/fragmentmenu"
+        android:name="com.example.tendacomics.Menu"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

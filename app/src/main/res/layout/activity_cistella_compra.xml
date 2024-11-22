@@ -24,7 +24,7 @@
         android:paddingLeft="20dp"
         />
 
-    <!-- LinearLayout para añadir dinámicamente las vistas de los cómics -->
+    <!-- LinearLayout per afegir dinàmicament les vistes dels còmics -->
     <LinearLayout
         android:id="@+id/linearLayoutCistell"
         android:layout_width="match_parent"

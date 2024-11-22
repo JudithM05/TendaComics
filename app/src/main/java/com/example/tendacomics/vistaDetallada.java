@@ -28,22 +28,22 @@ public class vistaDetallada extends AppCompatActivity {
         TextView textPrice = findViewById(R.id.textPrice);
         Button buttonAddToCart = findViewById(R.id.buttonAddToCart);
 
-        // Obtener datos del Intent
+        // Obtenir dades del Intent
         Intent intent = getIntent();
         int imageResource = intent.getIntExtra("imageResource", R.drawable.portada_gwenpool_uno); // Imagen predeterminada
         String title = intent.getStringExtra("title");
         String description = intent.getStringExtra("description");
         String price = intent.getStringExtra("price");
 
-        // Configurar los datos en la vista
+        // Configurar les dades en la vista
         imageComic.setImageResource(imageResource);
         textTitle.setText(title);
         textDescription.setText(description);
         textPrice.setText(price);
 
-        // Configurar botón de añadir al carrito
+        // Configurar botó d'afegir al cistell
         buttonAddToCart.setOnClickListener(v -> {
-            // Lógica para añadir al carrito (puede ser un Toast o actualizar un carrito global)
+            // Lògica per afegir al carret (pot ser un Toast o actualitzar un cistell global)
         });
     }
 }

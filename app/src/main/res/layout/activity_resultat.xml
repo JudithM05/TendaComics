@@ -45,7 +45,7 @@
             android:text="BUSCAR" />
     </LinearLayout>
 
-    <!-- LinearLayout vertical para centrar las imágenes debajo del texto -->
+    <!-- LinearLayout vertical per centrar las imatges a sota del text -->
     <LinearLayout
         android:id="@+id/linearLayoutImagenes"
         android:layout_width="wrap_content"

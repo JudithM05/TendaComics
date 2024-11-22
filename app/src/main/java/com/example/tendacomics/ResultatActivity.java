@@ -17,9 +17,9 @@ public class ResultatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat);
 
-        // Configurar el clic para cada cómic
+        // Configurar el clic per cada còmic
 
-        // Gwenpool (ya configurado en tu código)
+        // Gwenpool
         ImageButton imageButtonGwenpool = findViewById(R.id.imageButtonGwenpool);
         imageButtonGwenpool.setOnClickListener(v -> navigateToVistaDetallada(
                 R.drawable.portada_gwenpool_uno,
@@ -94,7 +94,7 @@ public class ResultatActivity extends AppCompatActivity {
         ));
     }
 
-    // Método reutilizable para navegar a la vista detallada
+    // Mètode reutilitzable per navegar a la vista detallada
     private void navigateToVistaDetallada(int imageResource, String title, String description, String price) {
         Intent intent = new Intent(this, vistaDetallada.class);
         intent.putExtra("imageResource", imageResource);

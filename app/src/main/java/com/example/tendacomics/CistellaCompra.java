@@ -16,7 +16,7 @@ public class CistellaCompra extends AppCompatActivity {
         setContentView(R.layout.activity_cistella_compra);
         linearLayoutCistell = findViewById(R.id.linearLayoutCistell);
 
-        // Añadir cómics a la cesta
+        // Afegir còmics al cistell
         addComicToCistell("La increíble Masacre-Gwen", R.drawable.portada_gwenpool_uno, "18,95 €");
         addComicToCistell("El asombroso Spiderman 14: Un nuevo día", R.drawable.spiderman_honor_a_slucis, "18,05 €");
         addComicToCistell("Doctor Extraño 04: Señor Agonía", R.drawable.el_que_hace_fufufu, "11,88 €");
@@ -28,40 +28,40 @@ public class CistellaCompra extends AppCompatActivity {
     }
 
     private void addComicToCistell(String title, int imageResource, String price) {
-        // Crear un nuevo LinearLayout para cada cómic
+        // Crear un nou LinearLayout per cada còmic
         LinearLayout comicLayout = new LinearLayout(this);
         comicLayout.setOrientation(LinearLayout.HORIZONTAL);
         comicLayout.setPadding(8, 8, 8, 8);
 
-        // Añadir ImageView para la imagen del cómic
+        // Afegir ImageView per la imatge del còmic
         ImageView comicImage = new ImageView(this);
         comicImage.setLayoutParams(new LinearLayout.LayoutParams(150, 200)); // Ajusta el tamaño según sea necesario
         comicImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
         comicImage.setImageResource(imageResource);
         comicLayout.addView(comicImage);
 
-        // Crear un LinearLayout vertical para el título y el precio
+        // Crear un LinearLayout vertical pel títol i el preu
         LinearLayout textLayout = new LinearLayout(this);
         textLayout.setOrientation(LinearLayout.VERTICAL);
         textLayout.setPadding(16, 0, 0, 0);
 
-        // Añadir TextView para el título del cómic
+        // Afegir TextView pel títol del còmic
         TextView comicTitle = new TextView(this);
         comicTitle.setText(title);
         comicTitle.setTextSize(16);
         textLayout.addView(comicTitle);
 
-        // Añadir TextView para el precio del cómic
+        // Afegir TextView pel preu del còmic
         TextView comicPrice = new TextView(this);
         comicPrice.setText(price);
         comicPrice.setTextSize(14);
         comicPrice.setTextColor(getResources().getColor(android.R.color.darker_gray));
         textLayout.addView(comicPrice);
 
-        // Añadir el LinearLayout de texto al LinearLayout del cómic
+        // Afegir el LinearLayout de text al LinearLayout del còmic
         comicLayout.addView(textLayout);
 
-        // Añadir el LinearLayout del cómic al LinearLayout principal
+        // Afegir el LinearLayout del còmic al LinearLayout principal
         linearLayoutCistell.addView(comicLayout);
     }
 }

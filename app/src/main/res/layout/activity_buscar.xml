@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".BuscarActivity">
 
-    <!-- LinearLayout para organizar la lupa y el campo de texto -->
+    <!-- LinearLayout per organitzar la lupa i el camp de text -->
     <LinearLayout
         android:id="@+id/linearLayoutBuscar"
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.4"> <!-- Ajusta el bias si es necesario para centrar mejor -->
+        app:layout_constraintVertical_bias="0.4"> <!-- Ajusta el bias si es necessari per centrar millor -->
 
         <!-- Lupa -->
         <ImageView

@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".BuscarActivity">
 
+    <fragment
+        android:id="@+id/fragmentPerfil"
+        android:name="com.example.tendacomics.Perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!-- LinearLayout per organitzar la lupa i el camp de text -->
     <LinearLayout
         android:id="@+id/linearLayoutBuscar"
@@ -47,14 +57,7 @@
         android:text="BUSCA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar" /> <!-- Ajusta el marge si és necessari -->
-    <fragment
-        android:id="@+id/fragmentPerfil"
-        android:name="com.example.tendacomics.Perfil"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="end|top"
-        android:layout_margin="40dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar" />
 
     <fragment
         android:id="@+id/fragmentmenu"

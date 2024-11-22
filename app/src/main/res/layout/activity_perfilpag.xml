@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".Perfilpag">
 
-    <!-- Fragmento superior en la esquina superior derecha -->
     <fragment
         android:id="@+id/fragmentPerfil"
         android:name="com.example.tendacomics.Perfil"
@@ -17,7 +16,6 @@
         android:layout_gravity="end|top"
         android:layout_margin="40dp" />
 
-    <!-- Información de usuario -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,12 +60,15 @@
         android:text="666 666 666"
         android:textSize="17sp" />
 
-    <!-- Fragmento inferior al fondo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
     <fragment
         android:id="@+id/fragmentmenu"
         android:name="com.example.tendacomics.Menu"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom" />
+        android:layout_height="60dp" />
 
 </LinearLayout>

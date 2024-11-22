@@ -41,6 +41,14 @@
         app:layout_constraintTop_toBottomOf="@id/editTextText" />
 
     <fragment
+        android:id="@id/fragmentComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.tendacomics.FragmentComprar"
+        app:layout_constraintBottom_toBottomOf="@id/editTextText2"
+        />
+
+    <fragment
         android:id="@+id/fragmentmenu"
         android:name="com.example.tendacomics.Menu"
         android:layout_width="match_parent"

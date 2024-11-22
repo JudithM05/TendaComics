@@ -40,6 +40,16 @@
         android:clipToPadding="false" />
 
     <fragment
+        android:id="@id/fragmentComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.tendacomics.FragmentComprar"
+        app:layout_constraintBottom_toTopOf="@id/fragmentmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayoutCistell"
+        />
+
+    <fragment
         android:id="@+id/fragmentmenu"
         android:name="com.example.tendacomics.Menu"
         android:layout_width="match_parent"

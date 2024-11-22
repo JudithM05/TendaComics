@@ -24,33 +24,33 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="@string/categiories"
-            android:textSize="20sp"
-            android:layout_marginBottom="20dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/buttonMangues"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#ee419e"
-            android:text="@string/mangues"
-            android:layout_marginTop="10dp" />
+            android:text="@string/mangues" />
 
         <Button
             android:id="@+id/buttonComics"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#ee419e"
-            android:text="@string/c_mics"
-            android:layout_marginTop="10dp" />
+            android:text="@string/c_mics" />
 
         <Button
             android:id="@+id/buttonFigures"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#ee419e"
-            android:text="@string/figures"
-            android:layout_marginTop="10dp" />
+            android:text="@string/figures" />
     </LinearLayout>
 
     <fragment

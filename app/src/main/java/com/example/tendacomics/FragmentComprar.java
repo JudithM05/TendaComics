@@ -28,13 +28,15 @@ public class FragmentComprar extends Fragment {
                 // Comprobamos en qué actividad estamos
                 String actividadActual = getActivity().getClass().getSimpleName();
 
-                if (actividadActual.equals("CistellaCompra")) {
+                if (getActivity() instanceof CistellaCompra) {
                     // Si estamos en CistellaCompra, iniciamos Compradetallada
                     Intent intent = new Intent(getActivity(), Compradetallada.class);
                     startActivity(intent);
-                } else if (actividadActual.equals("CompraDetallada")) {
+                } else if (getActivity() instanceof Compradetallada) {
                     // Si estamos en CompraDetallada, mostramos un Toast
                     Toast.makeText(getActivity(), "La compra s'ha realitzat amb èxit", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });

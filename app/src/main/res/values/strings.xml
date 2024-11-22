@@ -10,4 +10,6 @@
     <string name="correu_electr_nic">Correu electrònic</string>
     <string name="direcci">Direcció</string>
     <string name="fer_pregunta">Fer pregunta</string>
+    <string name="realitzar_comanda">Realitzar Comanda</string>
+    <string name="ajuda">Ajuda</string>
 </resources>

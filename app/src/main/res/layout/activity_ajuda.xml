@@ -43,21 +43,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Teniu edicions limitades o de col·leccionista? ▼" />
+            android:text="@string/teniu_edicions_limitades_o_de_col_leccionista" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Quines són les sèries de manga/còmics més populars disponibles? ▼" />
+            android:text="@string/quines_s_n_les_s_ries_de_manga_c_mics_m_s_populars_disponibles" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Reposeu números antics o volums que ja estan esgotats? ▼" />
+            android:text="@string/reposeu_n_meros_antics_o_volums_que_ja_estan_esgotats" />
 
         <Button
             android:id="@+id/buttonPregunta"
@@ -66,7 +66,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="32dp"
             android:backgroundTint="#ee419e"
-            android:text="Fer Pregunta" />
+            android:text="@string/fer_pregunta" />
     </LinearLayout>
 
     <fragment

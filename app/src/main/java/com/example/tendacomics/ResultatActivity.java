@@ -2,13 +2,10 @@ package com.example.tendacomics;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class ResultatActivity extends AppCompatActivity {
 
@@ -16,6 +13,20 @@ public class ResultatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat);
+
+        // Recuperar texto de BuscarActivity
+        String textoBuscar = getIntent().getStringExtra("textoBuscar");
+
+        // Mostrar el texto en un TextView (opcional)
+        EditText editTextBuscar = findViewById(R.id.editTextBuscar);
+        editTextBuscar.setText(textoBuscar);
+
+        // Botón "Atrás" (actualizado)
+        ImageButton imageButtonDetras = findViewById(R.id.imageButtonDetras);
+        imageButtonDetras.setOnClickListener(v -> {
+            Intent intent = new Intent(ResultatActivity.this, BuscarActivity.class);
+            startActivity(intent);
+        });
 
         // Configurar el clic per cada còmic
 

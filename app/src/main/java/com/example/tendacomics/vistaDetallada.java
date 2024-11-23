@@ -39,8 +39,10 @@ public class vistaDetallada extends AppCompatActivity {
 
         // Configurar botón de añadir al carrito
         buttonAddToCart.setOnClickListener(v -> {
-            // Lógica para añadir al carrito (puede ser un Toast o actualizar un carrito global)
+            Intent intent2 = new Intent(vistaDetallada.this, CistellaCompra.class);
+            startActivity(intent2);
         });
+
 
         // Configurar botón de "enrere" para ir a BuscarActivity
         imageButtonEnrere.setOnClickListener(v -> {

@@ -24,7 +24,7 @@
         app:tint="#ee419e"
         android:background="@android:color/transparent"
         android:paddingTop="40dp"
-        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
         android:contentDescription="Botó per anar enrere"
         />
 

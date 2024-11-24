@@ -12,4 +12,13 @@
     <string name="fer_pregunta">Fer pregunta</string>
     <string name="realitzar_comanda">Realitzar Comanda</string>
     <string name="ajuda">Ajuda</string>
+    <string name="user123">User123</string>
+    <string name="user123_gmail_com">user123@gmail.com</string>
+    <string name="_666_666_666">666 666 666</string>
+    <string name="teniu_edicions_limitades_o_de_col_leccionista">Teniu edicions limitades o de col·leccionista? ▼</string>
+    <string name="quines_s_n_les_s_ries_de_manga_c_mics_m_s_populars_disponibles">Quines són les sèries de manga/còmics més populars disponibles? ▼</string>
+    <string name="reposeu_n_meros_antics_o_volums_que_ja_estan_esgotats">Reposeu números antics o volums que ja estan esgotats? ▼</string>
+    <string name="cistell">Cistell</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="busca">BUSCA</string>
 </resources>

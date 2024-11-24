@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="BUSCAR" />
+            android:text="@string/buscar" />
     </LinearLayout>
 
     <!-- Botó a sota del LinearLayout -->
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#ee419e"
-        android:text="BUSCA"
+        android:text="@string/busca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutBuscar" />

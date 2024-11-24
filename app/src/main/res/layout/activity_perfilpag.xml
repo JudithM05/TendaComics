@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:text="User123"
+        android:text="@string/user123"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@id/imageView"
         app:layout_constraintTop_toTopOf="@id/imageView" />
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
-        android:text="user123@gmail.com"
+        android:text="@string/user123_gmail_com"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="@id/textView5"
         app:layout_constraintTop_toBottomOf="@id/textView5" />
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
-        android:text="666 666 666"
+        android:text="@string/_666_666_666"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="@id/textView6"
         app:layout_constraintTop_toBottomOf="@id/textView6" />

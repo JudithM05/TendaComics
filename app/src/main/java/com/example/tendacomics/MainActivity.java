@@ -48,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // Solo agregamos el fragmento una vez cuando la actividad se crea por primera vez
+        // Només afegim el fragment un cop quan la activitat es crea per primer cop
         if (savedInstanceState == null) {
-            // Crear una instancia del fragmento Menu
+            // Crear una instància del fragment Menu
             Menu menuFragment = new Menu();
 
-            // Realizamos la transacción para reemplazar el fragmento en el contenedor
+            // Realitzem la transacció per reemplaçar el fragment en el conteidor
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.fragmentmenu, menuFragment);
             transaction.commit();

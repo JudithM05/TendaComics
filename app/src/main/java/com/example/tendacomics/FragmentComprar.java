@@ -15,25 +15,25 @@ public class FragmentComprar extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Infla el layout para este fragmento
+        // Infla el layout per aquest fragment
         View rootView = inflater.inflate(R.layout.fragment_comprar, container, false);
 
-        // Inicializa el botón después de inflar la vista
+        // Inicialitza el botó després d'inflar la vista
         Button buttonComprar = rootView.findViewById(R.id.buttonComprar);
 
-        // Configura el listener para el botón
+        // Configura el listener pel botó
         buttonComprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Comprobamos en qué actividad estamos
+                // Comprobem en quina activitat estem
                 String actividadActual = getActivity().getClass().getSimpleName();
 
                 if (getActivity() instanceof CistellaCompra) {
-                    // Si estamos en CistellaCompra, iniciamos Compradetallada
+                    // Si estem en CistellaCompra, iniciem Compradetallada
                     Intent intent = new Intent(getActivity(), Compradetallada.class);
                     startActivity(intent);
                 } else if (getActivity() instanceof Compradetallada) {
-                    // Si estamos en CompraDetallada, mostramos un Toast
+                    // Si estem en CompraDetallada, mostrem un Toast
                     Toast.makeText(getActivity(), "La compra s'ha realitzat amb èxit", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
@@ -41,7 +41,7 @@ public class FragmentComprar extends Fragment {
             }
         });
 
-        // Devuelve la vista inflada
+        // Retorna la vista inflada
         return rootView;
     }
 }

@@ -14,14 +14,14 @@ public class ResultatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat);
 
-        // Recuperar texto de BuscarActivity
+        // Recuperar text de BuscarActivity
         String textoBuscar = getIntent().getStringExtra("textoBuscar");
 
-        // Mostrar el texto en un TextView (opcional)
+        // Mostrar el text en un TextView
         EditText editTextBuscar = findViewById(R.id.editTextBuscar);
         editTextBuscar.setText(textoBuscar);
 
-        // Botón "Atrás" (actualizado)
+        // Botó TornarEnrere
         ImageButton imageButtonDetras = findViewById(R.id.imageButtonDetras);
         imageButtonDetras.setOnClickListener(v -> {
             Intent intent = new Intent(ResultatActivity.this, BuscarActivity.class);

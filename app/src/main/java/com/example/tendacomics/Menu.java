@@ -14,16 +14,16 @@ public class Menu extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-// Inflamos el layout del fragmento
+// Inflem el layout del fragment
         View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
 
-        // Obtener las referencias a los ImageView
+        // Obtenir les referències als ImageView
         ImageView imageViewCasa = rootView.findViewById(R.id.imageViewCasa);
         ImageView imageViewLupa = rootView.findViewById(R.id.imageViewLupa);
         ImageView imageViewCompra = rootView.findViewById(R.id.imageViewCompra);
         ImageView imageViewAjuda = rootView.findViewById(R.id.imageViewAjuda);
 
-        // Configurar los listeners para cada ImageView
+        // Configurar els listeners per cada ImageView
         imageViewCasa.setOnClickListener(v -> {
             if (getActivity() != null) {
                 Intent intent = new Intent(getActivity(), MainActivity.class);

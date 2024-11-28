@@ -26,7 +26,7 @@ public class vistaDetallada extends AppCompatActivity {
 
         // Obtenir dades del Intent
         Intent intent = getIntent();
-        int imageResource = intent.getIntExtra("imageResource", R.drawable.portada_gwenpool_uno); // Imagen predeterminada
+        int imageResource = intent.getIntExtra("imageResource", R.drawable.portada_gwenpool_uno); // Imatge predeterminada
         String title = intent.getStringExtra("title");
         String description = intent.getStringExtra("description");
         String price = intent.getStringExtra("price");

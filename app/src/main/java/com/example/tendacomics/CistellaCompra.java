@@ -35,7 +35,7 @@ public class CistellaCompra extends AppCompatActivity {
 
         // Afegir ImageView per la imatge del còmic
         ImageView comicImage = new ImageView(this);
-        comicImage.setLayoutParams(new LinearLayout.LayoutParams(150, 200)); // Ajusta el tamaño según sea necesario
+        comicImage.setLayoutParams(new LinearLayout.LayoutParams(150, 200)); // Ajusta el tamany segons sigui necessari
         comicImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
         comicImage.setImageResource(imageResource);
         comicLayout.addView(comicImage);

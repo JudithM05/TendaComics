@@ -24,30 +24,28 @@ public class vistaDetallada extends AppCompatActivity {
         Button buttonAddToCart = findViewById(R.id.buttonAddToCart);
         ImageButton imageButtonEnrere = findViewById(R.id.imageButtonEnrere);
 
-        // Obtener datos del Intent
+        // Obtenir dades del Intent
         Intent intent = getIntent();
         int imageResource = intent.getIntExtra("imageResource", R.drawable.portada_gwenpool_uno); // Imagen predeterminada
         String title = intent.getStringExtra("title");
         String description = intent.getStringExtra("description");
         String price = intent.getStringExtra("price");
 
-        // Configurar los datos en la vista
+        // Configurar les dades en la vista
         imageComic.setImageResource(imageResource);
         textTitle.setText(title);
         textDescription.setText(description);
         textPrice.setText(price);
 
-        // Configurar botón de añadir al carrito
+        // Configurar botó de afegir al cistell
         buttonAddToCart.setOnClickListener(v -> {
-            // Lógica para añadir al carrito (puede ser un Toast o actualizar un carrito global)
         });
 
-        // Configurar botón de "enrere" para ir a BuscarActivity
+        // Configurar botó de "enrere" per anar a BuscarActivity
         imageButtonEnrere.setOnClickListener(v -> {
-            // Crear Intent para ir a BuscarActivity
+            // Crear Intent per anar a BuscarActivity
             Intent intentEnrere = new Intent(vistaDetallada.this, ResultatActivity.class);
             startActivity(intentEnrere);
-            // Opcional: cerrar la actividad actual si no quieres que el usuario vuelva
             finish();
         });
     }

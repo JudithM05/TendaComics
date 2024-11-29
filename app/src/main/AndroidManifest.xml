@@ -17,7 +17,7 @@
             android:name=".CistellaCompra"
             android:exported="true" />
         <activity
-            android:name=".Compradetallada"
+            android:name=".Fer_compra"
             android:exported="true" />
         <activity
             android:name=".Ajuda"

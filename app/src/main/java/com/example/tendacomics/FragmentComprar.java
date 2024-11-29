@@ -30,9 +30,9 @@ public class FragmentComprar extends Fragment {
 
                 if (getActivity() instanceof CistellaCompra) {
                     // Si estem en CistellaCompra, iniciem Compradetallada
-                    Intent intent = new Intent(getActivity(), Compradetallada.class);
+                    Intent intent = new Intent(getActivity(), Fer_compra.class);
                     startActivity(intent);
-                } else if (getActivity() instanceof Compradetallada) {
+                } else if (getActivity() instanceof Fer_compra) {
                     // Si estem en CompraDetallada, mostrem un Toast
                     Toast.makeText(getActivity(), "La compra s'ha realitzat amb èxit", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getActivity(), MainActivity.class);

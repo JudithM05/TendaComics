@@ -21,4 +21,7 @@
     <string name="cistell">Cistell</string>
     <string name="buscar">BUSCAR</string>
     <string name="busca">BUSCA</string>
+    <string name="icona_lupa">Icona lupa</string>
+    <string name="comprar">COMPRAR</string>
+    <string name="total_de_l_enc_rrec">Total de l\'encàrrec:</string>
 </resources>

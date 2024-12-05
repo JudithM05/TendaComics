@@ -45,7 +45,7 @@
             android:id="@+id/imageViewLupa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Icona lupa"
+            android:contentDescription="@string/icona_lupa"
             app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
         <!-- Camp de text -->
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="BUSCAR" />
+            android:text="@string/buscar" />
     </LinearLayout>
 
     <!-- LinearLayout vertical per centrar las imatges a sota del text -->

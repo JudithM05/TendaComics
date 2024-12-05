@@ -30,26 +30,17 @@
 
         <Button
             android:id="@+id/buttonMangues"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#ee419e"
+            style="@style/EstilMain"
             android:text="@string/mangues" />
 
         <Button
             android:id="@+id/buttonComics"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#ee419e"
+            style="@style/EstilMain"
             android:text="@string/c_mics" />
 
         <Button
             android:id="@+id/buttonFigures"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#ee419e"
+            style="@style/EstilMain"
             android:text="@string/figures" />
     </LinearLayout>
 

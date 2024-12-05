@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TendaComics</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categiories">Categories</string>
+    <string name="mangues">Mangas</string>
+    <string name="c_mics">Comics</string>
+    <string name="figures">Figures</string>
+    <string name="perfil">Profile</string>
+    <string name="correu_electr_nic">Email</string>
+    <string name="direcci">Address</string>
+    <string name="fer_pregunta">Ask a question</string>
+    <string name="realitzar_comanda">Place an Order</string>
+    <string name="ajuda">Help</string>
+    <string name="user123">User123</string>
+    <string name="user123_gmail_com">user123@gmail.com</string>
+    <string name="_666_666_666">666 666 666</string>
+    <string name="teniu_edicions_limitades_o_de_col_leccionista">Do you have limited or collector's editions? ▼</string>
+    <string name="quines_s_n_les_s_ries_de_manga_c_mics_m_s_populars_disponibles">What are the most popular manga/comic series available? ▼</string>
+    <string name="reposeu_n_meros_antics_o_volums_que_ja_estan_esgotats">Do you restock old issues or volumes that are sold out? ▼</string>
+    <string name="cistell">Cart</string>
+    <string name="buscar">SEARCH</string>
+    <string name="busca">SEARCH</string>
+    <string name="icona_lupa">Magnifying Glass Icon</string>
+    <string name="comprar">BUY</string>
+    <string name="total_de_l_enc_rrec">Total Order:</string>
+</resources>
